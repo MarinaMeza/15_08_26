@@ -7,9 +7,9 @@ namespace _15_08_26
 {
     class Neumatico
     {
-        public string marca;
+        private string marca;
         public long cambioKm;  //Cada cuanto se tiene q cambiar
-        private long instalacionKm; //Cuando se Instalo
+        public long instalacionKm; //Cuando se Instalo
 
         // CONSTRUCTOR:
          //Los Constructores no retorna nada "void"

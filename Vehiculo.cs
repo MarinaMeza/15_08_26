@@ -10,10 +10,10 @@ namespace _15_08_26
         public string marca;
         private long _KilometrosRecorridos;
         public Motor MotorDelAuto;
-        public Neumatico Rueda1;
-        public Neumatico Rueda2;
-        public Neumatico Rueda3;
-        public Neumatico Rueda4;
+        private Neumatico Rueda1;
+        private Neumatico Rueda2;
+        private Neumatico Rueda3;
+        private Neumatico Rueda4;
 
         public void Vehiculo()
         {
@@ -49,8 +49,16 @@ namespace _15_08_26
         }
 
 
+        public void AgregarRuedas(Neumatico fRueda1, Neumatico fRueda2, Neumatico fRueda3, Neumatico fRueda4)
+        {
+            this.Rueda1 = fRueda1;
+            this.Rueda2 = fRueda2;
+            this.Rueda3 = fRueda3;
+            this.Rueda4 = fRueda4;
+        }
+
 
         
 
-    }
+    }//fin Clase
 }

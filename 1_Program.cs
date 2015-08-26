@@ -16,10 +16,9 @@ namespace _15_08_26
             Vehiculo MiAuto = new Vehiculo();
 
             MiAuto.MotorDelAuto = new Motor();
-            MiAuto.Rueda1 = new Neumatico();
-            MiAuto.Rueda2 = new Neumatico();
-            MiAuto.Rueda3 = new Neumatico();
-            MiAuto.Rueda4 = new Neumatico();
+           
+            
+            
         }
     }
 }
