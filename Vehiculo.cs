@@ -15,6 +15,12 @@ namespace _15_08_26
         public Neumatico Rueda3;
         public Neumatico Rueda4;
 
+        public void Vehiculo()
+        {
+            this.marca = "Audi";
+            this._KilometrosRecorridos = 0;
+        }
+
         public void Andar(long KmRecorridos)
         {
            this._KilometrosRecorridos = this._KilometrosRecorridos + KmRecorridos;

@@ -11,6 +11,16 @@ namespace _15_08_26
         public long cambioKm;  //Cada cuanto se tiene q cambiar
         private long instalacionKm; //Cuando se Instalo
 
+        // CONSTRUCTOR:
+         //Los Constructores no retorna nada "void"
+         //Pede ser publico o privado
+         //se llama igual q la clase
+
+        public void Neumatico()
+        {
+            this.cambioKm = 25000;
+            this.marca = "Pireli";
+        }
 
         public void set(long KmInstalacion)
         {
