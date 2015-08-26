@@ -21,7 +21,7 @@ namespace _15_08_26
            MiAuto.Rueda4 = new Neumatico();
 
            MiAuto.marca = "Audi";
-           MiAuto.KilometrosRecorridos = 0;
+           //MiAuto.KilometrosRecorridos = 0;
 
            MiAuto.MotorDelAuto.marca = "Audi";
            MiAuto.MotorDelAuto.serviceKm = 50000;           
@@ -35,7 +35,7 @@ namespace _15_08_26
            MiAuto.Rueda4.marca = "Audi";
            MiAuto.Rueda4.cambioKm = 25000;
 
-
+           
 
         }
     }
