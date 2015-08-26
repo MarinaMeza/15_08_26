@@ -21,18 +21,19 @@ namespace _15_08_26
            MiAuto.Rueda4 = new Neumatico();
 
            MiAuto.marca = "Audi";
+           MiAuto.KilometrosRecorridos = 0;
 
            MiAuto.MotorDelAuto.marca = "Audi";
            MiAuto.MotorDelAuto.serviceKm = 50000;           
            
            MiAuto.Rueda1.marca = "Audi";
-           MiAuto.Rueda1.instalacionKm = 25000;
+           MiAuto.Rueda1.cambioKm = 25000;
            MiAuto.Rueda2.marca = "Audi";
-           MiAuto.Rueda2.instalacionKm = 25000;
+           MiAuto.Rueda2.cambioKm = 25000;
            MiAuto.Rueda3.marca = "Audi";
-           MiAuto.Rueda3.instalacionKm = 25000;
+           MiAuto.Rueda3.cambioKm = 25000;
            MiAuto.Rueda4.marca = "Audi";
-           MiAuto.Rueda4.instalacionKm = 25000;
+           MiAuto.Rueda4.cambioKm = 25000;
 
 
 
