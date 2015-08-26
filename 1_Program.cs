@@ -13,7 +13,29 @@ namespace _15_08_26
     {
         static void Main(string[] args)
         {
+           Vehiculo MiAuto = new Vehiculo();
+           MiAuto.MotorDelAuto = new Motor();
+           MiAuto.Rueda1 = new Neumatico();
+           MiAuto.Rueda2 = new Neumatico();
+           MiAuto.Rueda3 = new Neumatico();
+           MiAuto.Rueda4 = new Neumatico();
+
+           MiAuto.marca = "Audi";
+
+           MiAuto.MotorDelAuto.marca = "Audi";
+           MiAuto.MotorDelAuto.serviceKm = 50000;           
            
+           MiAuto.Rueda1.marca = "Audi";
+           MiAuto.Rueda1.instalacionKm = 25000;
+           MiAuto.Rueda2.marca = "Audi";
+           MiAuto.Rueda2.instalacionKm = 25000;
+           MiAuto.Rueda3.marca = "Audi";
+           MiAuto.Rueda3.instalacionKm = 25000;
+           MiAuto.Rueda4.marca = "Audi";
+           MiAuto.Rueda4.instalacionKm = 25000;
+
+
+
         }
     }
 }

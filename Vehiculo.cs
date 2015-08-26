@@ -14,8 +14,5 @@ namespace _15_08_26
         public Neumatico Rueda2;
         public Neumatico Rueda3;
         public Neumatico Rueda4;
-
-
-
     }
 }
