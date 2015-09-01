@@ -15,7 +15,8 @@ namespace _15_08_26
             this.marca = "Pirulo";
             this.serviceKm = 50000;
         }
-        public bool VerificarService(long KmRecorridos)
+
+        public bool VerificarService(long KmRecorridos) //arreglar esto
         {
             long lAux = KmRecorridos % this.serviceKm;
             if(lAux <= this.serviceKm)

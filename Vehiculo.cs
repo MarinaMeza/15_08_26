@@ -9,7 +9,7 @@ namespace _15_08_26
     {
         public string marca;
         private long _KilometrosRecorridos;
-        public Motor MotorDelAuto;
+        private Motor MotorDelAuto;
         private Neumatico Rueda1;
         private Neumatico Rueda2;
         private Neumatico Rueda3;
@@ -23,6 +23,7 @@ namespace _15_08_26
 
         public  Vehiculo()
         {
+            this.MotorDelAuto = new Motor();
             this.marca = "Audi";
             this._KilometrosRecorridos = 0;
         }
