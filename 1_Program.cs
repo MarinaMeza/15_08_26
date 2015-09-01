@@ -13,13 +13,22 @@ namespace _15_08_26
     {
         static void Main(string[] args)
         {
-            Vehiculo MiAuto = new Vehiculo();
+           /* Vehiculo MiAuto = new Vehiculo();
 
             //MiAuto.MotorDelAuto = new Motor();
 
             MiAuto.AgregarRuedas(new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()));
-            
-            
+            */
+
+            Usuario U1 = new Usuario("juan");
+            Usuario U2;
+            U2 = U1;
+            U2 = null;
+//            U2.nombre = "Maria";
+           
+            Console.WriteLine(U1.nombre);
+            Console.ReadKey();
+
         }
     }
 }

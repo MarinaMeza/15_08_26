@@ -27,6 +27,10 @@ namespace _15_08_26
             this.marca = "Audi";
             this._KilometrosRecorridos = 0;
         }
+        public Vehiculo(string marca)
+        {
+            this.marca = marca;
+        }
 
         public void Andar(long KmRecorridos)
         {
