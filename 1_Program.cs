@@ -16,7 +16,8 @@ namespace _15_08_26
             Vehiculo MiAuto = new Vehiculo();
 
             MiAuto.MotorDelAuto = new Motor();
-           
+
+            MiAuto.AgregarRuedas(new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()));
             
             
         }

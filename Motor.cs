@@ -10,7 +10,7 @@ namespace _15_08_26
         public string marca;
         public long serviceKm; //Cada cuanto hay q hacer el service
 
-        public void Motor()
+        public  Motor()
         {
             this.marca = "Pirulo";
             this.serviceKm = 50000;

@@ -16,17 +16,19 @@ namespace _15_08_26
          //Pede ser publico o privado
          //se llama igual q la clase
 
-        public void Neumatico()
+        public  Neumatico(long instalacionAux)
         {
+            this.instalacionKm = instalacionAux;
             this.cambioKm = 25000;
             this.marca = "Pireli";
         }
-
-        public void set(long KmInstalacion)
+        /*
+        public void setterKMinst(long KmInstalacion)
         {
             this.instalacionKm = KmInstalacion;
-        }
+        }*/
 
+      
         public bool NecesitaCambio(long KmRecorridos)
         {
             if (KmRecorridos - this.instalacionKm > this.cambioKm)
