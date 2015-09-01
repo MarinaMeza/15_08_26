@@ -23,8 +23,8 @@ namespace _15_08_26
             Usuario U1 = new Usuario("juan");
             Usuario U2;
             U2 = U1;
-            U2 = null;
-//            U2.nombre = "Maria";
+            //U2 = null;
+            U2.nombre = "Maria";
            
             Console.WriteLine(U1.nombre);
             Console.ReadKey();
