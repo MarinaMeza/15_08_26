@@ -15,6 +15,12 @@ namespace _15_08_26
         //nombrar de la misma manera al metodo y cambiarle la firma al metodo 
         //(modificando el tipo de parametro y el orden en el que recibe los parametros)
 
+
+
+        //constructor estatico:
+        //particularidades o reglas a respetar:
+        //
+
         public Usuario()
         {
             this.auto = new Vehiculo();

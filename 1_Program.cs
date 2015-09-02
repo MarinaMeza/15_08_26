@@ -20,14 +20,8 @@ namespace _15_08_26
             MiAuto.AgregarRuedas(new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()), new Neumatico(MiAuto.getterKMrecorridos()));
             */
 
-            Usuario U1 = new Usuario("juan");
-            Usuario U2;
-            U2 = U1;
-            //U2 = null;
-            U2.nombre = "Maria";
-           
-            Console.WriteLine(U1.nombre);
-            Console.ReadKey();
+            Usuario U1 = new Usuario();
+            Vehiculo auto1 = new Vehiculo();
 
         }
     }

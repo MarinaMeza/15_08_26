@@ -14,6 +14,20 @@ namespace _15_08_26
         private Neumatico Rueda2;
         private Neumatico Rueda3;
         private Neumatico Rueda4;
+        private static int contadorDeVehiculos;
+        private static DateTime fecha;
+
+        /// <summary>
+        /// modificadores de acceso no estan permiitdos en constructores estaticos
+        /// los constructores estaticos no deben tener parametros
+        /// son privados
+        /// el constructor estatico unicamente ve metodos o constructores estaticos
+        /// </summary>
+        static Vehiculo()
+        {
+            Vehiculo.fecha = DateTime.Now;
+            Vehiculo.contadorDeVehiculos = 0;
+        }
 
         public long getterKMrecorridos()
         {
@@ -26,8 +40,15 @@ namespace _15_08_26
             this.MotorDelAuto = new Motor();
             this.marca = "Audi";
             this._KilometrosRecorridos = 0;
+            Vehiculo.contador();
         }
-        public Vehiculo(string marca)
+
+        public static void contador()
+        {
+            Vehiculo.contadorDeVehiculos++;
+        }
+
+        public Vehiculo(string marca): this()
         {
             this.marca = marca;
         }
