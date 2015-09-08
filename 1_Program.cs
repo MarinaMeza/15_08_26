@@ -22,7 +22,28 @@ namespace _15_08_26
 
             Usuario U1 = new Usuario();
             Vehiculo auto1 = new Vehiculo();
+            long SumaKM;
+           
+            U1.auto.patente = "213";
+            auto1.patente = "013";
 
+            U1.auto._KilometrosRecorridos = 50;
+            auto1._KilometrosRecorridos = 100;
+
+            if (auto1 == U1.auto)
+            {
+                Console.WriteLine("Son iguales");
+            }
+            else
+            {
+                Console.WriteLine("No son iguales");
+            }
+
+            //SumaKM = Vehiculo.SumarVehiculo(auto1, U1.auto);
+            SumaKM = auto1 + U1.auto;
+            Console.WriteLine(SumaKM);
+
+            Console.ReadKey();
         }
     }
 }

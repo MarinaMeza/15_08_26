@@ -8,13 +8,13 @@ namespace _15_08_26
     class Vehiculo
     {
         public string marca;
-        private long _KilometrosRecorridos;
+        public long _KilometrosRecorridos;
         private Motor MotorDelAuto;
         private Neumatico Rueda1;
         private Neumatico Rueda2;
         private Neumatico Rueda3;
         private Neumatico Rueda4;
-        private string patente;
+        public string patente;
         private static int contadorDeVehiculos;
         private static DateTime fecha;
 
@@ -109,6 +109,33 @@ namespace _15_08_26
             return !(auto1 == auto2);
         }
         
+        /// <summary>
+        /// Suma los kilometros de los vehiculos retornando solamente la suma si tienen patentes distintas.
+        /// De lo contrario, retornará 0
+        /// </summary>
+        /// <param name="auto1"></param>
+        /// <param name="auto2"></param>
+        public static long SumarVehiculo(Vehiculo auto1, Vehiculo auto2)
+        {
+            if (auto1 != auto2)
+            {
+                return (auto1._KilometrosRecorridos + auto2._KilometrosRecorridos);
+            }
+            else
+                return 0;
+        }
 
+        public static long operator +(Vehiculo auto1, Vehiculo auto2)
+        {
+            if (auto1 != auto2)
+            {
+                return (auto1._KilometrosRecorridos + auto2._KilometrosRecorridos);
+            }
+            else
+                return 0;
+        }
+    
+        
     }//fin Clase
 }
+ 
