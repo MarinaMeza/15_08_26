@@ -14,6 +14,7 @@ namespace _15_08_26
         private Neumatico Rueda2;
         private Neumatico Rueda3;
         private Neumatico Rueda4;
+        private string patente;
         private static int contadorDeVehiculos;
         private static DateTime fecha;
 
@@ -89,7 +90,24 @@ namespace _15_08_26
             this.Rueda4 = fRueda4;
         }
 
+        public static bool CompararVehiculo(Vehiculo auto1, Vehiculo auto2)
+        {
+            if (auto1.patente == auto2.patente)
+                return true;
+            return false;
+        }
 
+        public static bool operator ==(Vehiculo auto1, Vehiculo auto2)
+        {
+            if (auto1.patente == auto2.patente)
+                return true;
+            return false;
+        }
+
+        public static bool operator !=(Vehiculo auto1, Vehiculo auto2)
+        {
+            return !(auto1 == auto2);
+        }
         
 
     }//fin Clase
